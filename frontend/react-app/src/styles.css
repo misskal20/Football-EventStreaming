@@ -1,0 +1,152 @@
+/* -------------------- GLOBAL -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f2f5;  /* soft light gray */
+  color: #1f2937;
+  padding: 20px;
+}
+
+/* -------------------- CONTAINER -------------------- */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* -------------------- HEADER -------------------- */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.header span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* -------------------- GRID -------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* -------------------- CARDS -------------------- */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* -------------------- MATCH CARD -------------------- */
+.match-card {
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 5px solid #3b82f6;  /* blue accent */
+  background: #f9fafb;
+  transition: 0.2s;
+}
+
+.match-card:hover {
+  background: #f0f4ff;
+  cursor: pointer;
+}
+
+.match-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.match-score {
+  font-size: 1rem;
+  margin-top: 6px;
+  font-weight: 600;
+  color: #3b82f6; /* blue accent */
+}
+
+/* -------------------- SELECTED MATCH -------------------- */
+.selected-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #3b82f6;
+  background: #ffffff;
+}
+
+.selected-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* -------------------- BUTTONS -------------------- */
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.btn.delete {
+  background: #ef4444;
+}
+
+.btn.delete:hover {
+  background: #dc2626;
+}
+
+/* -------------------- ADMIN FORM -------------------- */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.admin-input:focus {
+  outline: 2px solid #3b82f6;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 850px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
